@@ -9,7 +9,9 @@ import com.dnstech.couser.entities.User;
 
 /* - Aqui iremos definir os recursos basico para aplicação "User" que serão os controladores rest 
  * - Para esse classe ser um recurso web é usado a anotação @RestController
- * - Alem disso damos um nome ao recurso usando anotação @RestMapping */
+ * - Alem disso damos um nome ao recurso usando anotação @RestMapping 
+ * - @RequestMapping é uma anotação de nível de classe que define o prefixo de URL para todas as rotas de um controller.
+ * */
 
 @RestController
 @RequestMapping(value = "/users")
@@ -24,5 +26,4 @@ public class UserResource {
 		
 	}
 	
-
 }
