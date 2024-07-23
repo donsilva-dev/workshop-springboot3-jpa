@@ -18,11 +18,12 @@ public class UserService {
 	@Autowired
 	private UserRepository repository;
 	
-	/*Criar um metodo para buscar todos os usuarios no banco de dados*/
+	/*Metodo que busca todos os usuarios no banco de dados*/
 	public List<User> findAll(){
 		return repository.findAll();
 	}
 	
+	/*Metodo que busca usuarios no banco de dados por Id*/
 	public User findById(Long id) {
 		Optional<User> obj = repository.findById(id);
 		return obj.get();
