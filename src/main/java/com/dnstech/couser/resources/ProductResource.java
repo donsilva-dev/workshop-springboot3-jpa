@@ -13,7 +13,7 @@ import com.dnstech.couser.entities.Product;
 import com.dnstech.couser.services.ProductService;
 
 @RestController
-@RequestMapping(value = "/products")
+@RequestMapping(value = "/products/")
 public class ProductResource {
 	
 	@Autowired
