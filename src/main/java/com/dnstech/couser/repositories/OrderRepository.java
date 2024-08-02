@@ -6,4 +6,5 @@ import com.dnstech.couser.entities.Order;
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
+
 }

@@ -48,7 +48,7 @@ public class Product implements Serializable {
 
 	// Estou dizendo para o meu jpa que nao vou adimitir repetição do mesmo item.
 	@OneToMany(mappedBy = "id.product")
-	private Set<OrderItem> items = new HashSet<OrderItem>();
+	private Set<OrderItem> items = new HashSet<>();
 	
 	public Product() {
 
